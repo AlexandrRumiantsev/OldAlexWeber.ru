@@ -1,0 +1,13 @@
+
+<div class='container'>
+<pre style="background:#000;color:#f8f8f8">jQuery(function($){
+    $(document).mouseup(function (e){ <span style="color:#aeaeae;font-style:italic">// событие клика по веб-документу</span>
+    <span style="color:#e28964">var</span> div <span style="color:#e28964">=</span> $(<span style="color:#65b042">".hidden_auth"</span>); <span style="color:#aeaeae;font-style:italic">// тут указываем ID элемента</span>
+    <span style="color:#e28964">if</span> (<span style="color:#e28964">!</span>div.is(e.<span style="color:#dad085">target</span>) <span style="color:#aeaeae;font-style:italic">// если клик был не по нашему блоку</span>
+    <span style="color:#e28964">&amp;</span><span style="color:#e28964">&amp;</span> div.has(e.<span style="color:#dad085">target</span>).<span style="color:#dad085">length</span> <span style="color:#e28964">=</span><span style="color:#e28964">=</span><span style="color:#e28964">=</span> <span style="color:#3387cc">0</span>) { <span style="color:#aeaeae;font-style:italic">// и не по его дочерним элементам</span>
+    div.<span style="color:#dad085">hide</span>(); <span style="color:#aeaeae;font-style:italic">// скрываем его</span>
+    }
+    });
+    });
+</pre>
+</div>
